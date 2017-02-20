@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="iBeaconDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="single" translatesAutoresizingMaskIntoConstraints="NO" id="iln-Mj-Koj">
+                                <rect key="frame" x="145" y="49" width="124" height="124"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="iln-Mj-Koj" secondAttribute="height" id="Wjt-I3-8rR"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="miss" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dvx-lc-9NQ">
+                                <rect key="frame" x="180.5" y="223" width="53.5" height="31.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="uuuu-uuuu-uuuuu" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZJo-Sc-vBl">
+                                <rect key="frame" x="20" y="264.5" width="374" height="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="米" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5fo-wg-S37">
+                                <rect key="frame" x="278" y="564" width="17" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jPd-g8-P4T">
+                                <rect key="frame" x="137" y="519" width="141" height="66"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="55"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ZJo-Sc-vBl" firstAttribute="top" secondItem="Dvx-lc-9NQ" secondAttribute="bottom" constant="10" id="0YX-Av-FtK"/>
+                            <constraint firstItem="5fo-wg-S37" firstAttribute="leading" secondItem="jPd-g8-P4T" secondAttribute="trailing" id="2ay-fI-Wsa"/>
+                            <constraint firstItem="iln-Mj-Koj" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.3" id="BeL-xN-CvM"/>
+                            <constraint firstItem="ZJo-Sc-vBl" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="I7d-WJ-qg1"/>
+                            <constraint firstItem="ZJo-Sc-vBl" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="K6l-MY-pau"/>
+                            <constraint firstItem="jPd-g8-P4T" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" multiplier="1.5" id="KTA-L6-i58"/>
+                            <constraint firstItem="iln-Mj-Koj" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" multiplier="0.3" id="L19-VL-xFK"/>
+                            <constraint firstItem="Dvx-lc-9NQ" firstAttribute="top" secondItem="iln-Mj-Koj" secondAttribute="bottom" constant="50" id="NFj-7c-7cq"/>
+                            <constraint firstItem="Dvx-lc-9NQ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="NoC-Eh-7ZT"/>
+                            <constraint firstItem="jPd-g8-P4T" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="NpX-oh-3f5"/>
+                            <constraint firstItem="iln-Mj-Koj" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="R7F-ea-wOH"/>
+                            <constraint firstItem="5fo-wg-S37" firstAttribute="bottom" secondItem="jPd-g8-P4T" secondAttribute="bottom" id="Z13-TV-xug"/>
+                            <constraint firstAttribute="trailing" secondItem="ZJo-Sc-vBl" secondAttribute="trailing" constant="20" id="z9J-O4-B9D"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                    <connections>
+                        <outlet property="imageView" destination="iln-Mj-Koj" id="giS-5M-t40"/>
+                        <outlet property="nameLable" destination="Dvx-lc-9NQ" id="dLQ-it-8Dg"/>
+                        <outlet property="showDistanceLable" destination="jPd-g8-P4T" id="Nkl-9k-LZj"/>
+                        <outlet property="uuidLable" destination="ZJo-Sc-vBl" id="gJW-dy-pz0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="264" y="120"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="single" width="268" height="268"/>
+    </resources>
+</document>
